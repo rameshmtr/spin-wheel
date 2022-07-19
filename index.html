@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Spin Wheel</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="spin-wheel.css" rel="stylesheet">
+        <script src="spin-wheel.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>
+                Spin Wheel
+            </h1>
+        </div>
+        <form onsubmit="return false">
+            <div class="form-inline">
+                <input type="number" class="form-control" id="inputnumberdests" placeholder="Enter total Destinations">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="generate()">Submit</button>
+        </form>
+        <div class="form-inline" id="ch"></div>
+    </body>
+</html>
