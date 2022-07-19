@@ -1,6 +1,9 @@
 function generate(){
   var a = parseInt(document.getElementById("inputnumberdests").value) -1;
   var ch = document.getElementById("ch");
+  if (a<2){
+    alert("Please enter minimum 3")
+  }else{
 
   for (i = 0; i <=a; i++) {
     var input = document.createElement("input");
@@ -21,7 +24,7 @@ button.addEventListener ("click", function() {
   }
   localStorage.setItem("meta", JSON.stringify(locStor));
 });
-}
+}}
 
 function getLocalItem(){
   var x = localStorage.getItem("meta");
