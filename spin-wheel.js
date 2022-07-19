@@ -1,7 +1,7 @@
 function generate(){
   var a = parseInt(document.getElementById("inputnumberdests").value) -1;
   var ch = document.getElementById("ch");
-  console.log(a)
+
   if (a<2 || isNaN(a)){
     alert("Please enter minimum 3")
   }else{
